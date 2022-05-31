@@ -1,7 +1,7 @@
 /*
  Adrineh Khodaverdian
+ Professor Biehl
  CS/IS 212
- 
  */
 
 #include <iostream>
