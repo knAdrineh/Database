@@ -80,6 +80,7 @@ int main()
                         << setw(AGE_LEN) << temp_age << endl;
                     i = numRecords; //to stop the loop
                     found = true;
+                    count_deleted--;
                 }
             }
             if(!found){
@@ -269,6 +270,7 @@ int main()
                     iofile.seekp((record - 1) * RECORD_LEN, ios::beg);
                     iofile << setw(NAME_LEN) << name << ","
                         << setw(AGE_LEN) << age << endl;
+                    count_deleted++;
                 }
             }
             iofile.close();
